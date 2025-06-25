@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MADRUGON-Online Store</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="cxz.png" type="image/png">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">MADRUGON</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Catalog</a>
+        <span class="icons">🔍 🛒</span>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="MDRGN2_1_.gif" alt="HiLo LP" />
+  </section>
+
+  <section class="notice">
+    <h2>لطفا توجه فرمایید</h2>
+    <p>تا اطلاع ثانوی هیچ گونه فروشی نخواهیم داشت....به دلیل فقر.</p>
+  </section>
+
+  <main class="product-container">
+    <div class="product-image">
+      <img src="Test.gif" alt="HiLo Vinyl" />
+    </div>
+    <div class="product-gallery">
+  <img id="mainImage" src="Delux.png" alt="Main Product" class="main-image" />
+
+  <div class="thumbnails">
+    <img src="Delux.png" alt="Thumb 1" class="thumb" onclick="changeImage(this)" />
+    <img src="INSTRUMENTAL.png" alt="Thumb 2" class="thumb" onclick="changeImage(this)" />
+    <img src="secretfiles.png" alt="Thumb 3" class="thumb" onclick="changeImage(this)" />
+  </div>
+</div>
+
+    <div class="product-info">
+      <h2>MADRUGON-(Digital Album + Videos)</h2>
+      <p class="status">موجود نیست</p>
+      <button class="soldout-btn" disabled>فروخته شد</button>
+      <ul class="details">
+        <li>آلبوم کامل مدراگون</li>
+        <li>ویدیو ها و ساند افکت های دیده نشده</li>
+        <li>عکس و فوتیج های وی اچ اس مخصوص</li>
+        <li>آیدی دیسکورد برای ارتباط مستقیم با من</li>
+        <li>حجم فایل</li>
+        <li>13 GB </li>
+        <li>لینک های دانلود بعد از خرید برای شما نمایش داده میشود</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 - تمامی حقوق متعلق به مدراگون است
+    </p>
+  </footer>
+  <script>
+  function changeImage(element) {
+    const mainImg = document.getElementById("mainImage");
+    mainImg.src = element.src;
+  }
+</script>
+
+</body>
+</html>
